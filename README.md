@@ -54,3 +54,7 @@ A marketing operating system for a company, run with [Claude Code](https://claud
 - **This template is public; your copy shouldn't be.** Once you fill it in with your company's details, keep your repository private.
 
 Full operating rules: [CLAUDE.md](CLAUDE.md).
+
+## Licence
+
+Free to use and adapt under the [MIT licence](LICENSE). Created by [Marketing Simplified](https://marketingsimplifiedai.co.uk).
