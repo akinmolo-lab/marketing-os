@@ -1,0 +1,18 @@
+# Raw customer data: names, emails, phone numbers. Never upload.
+library/customers/raw/*
+!library/customers/raw/README.md
+
+# Data exports can contain personal data. Commit only anonymised summaries.
+06-measurement/data/*.csv
+06-measurement/data/*.xlsx
+!06-measurement/data/.gitkeep
+
+# Secrets and local settings
+.env
+*.env
+.claude/settings.local.json
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.obsidian/workspace*.json
