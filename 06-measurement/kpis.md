@@ -10,6 +10,10 @@ One definition per KPI, so everyone counts the same way.
 | Email subscribers | Total active subscribers | `<email platform>` | Monthly |
 | Event registrations | Sign-ups per event | `<event platform>` | Per event |
 | Event attendance rate | Attendees ÷ registrations | `<event platform>` | Per event |
+| Paid ads spend | Total spend across ad platforms | `<ad platform exports>` | Weekly |
+| Click-through rate (CTR) | Clicks ÷ impressions, per ad | `<ad platform exports>` | Weekly |
+| Cost per lead (CPL) | Ad spend ÷ leads from paid ads (leads as defined below) | `<ad platform + CRM>` | Weekly |
+| Return on ad spend (ROAS) | Revenue from paid-ad customers ÷ ad spend | `<CRM + ad platform>` | Monthly |
 | Leads | `<define: e.g. booked call or form enquiry>` | `<CRM>` | Monthly |
 | Customers won | New paying customers | `<CRM>` | Monthly |
 

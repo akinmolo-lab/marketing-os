@@ -1,6 +1,6 @@
 # Marketing OS
 
-A marketing operating system for a company, run with [Claude Code](https://claude.com/claude-code). Plain markdown folders hold what the company knows and what it's doing; four AI agents and 19 commands run the daily, weekly and monthly marketing work on top of them.
+A marketing operating system for a company, run with [Claude Code](https://claude.com/claude-code). Plain markdown folders hold what the company knows and what it's doing; five AI agents and 21 commands run the daily, weekly and monthly marketing work on top of them.
 
 ## What's inside
 
@@ -22,6 +22,7 @@ A marketing operating system for a company, run with [Claude Code](https://claud
 |---|---|
 | **Content Manager** | Plans, writes and refreshes content that ranks on Google and gets quoted by ChatGPT, Perplexity, Gemini and Google AI Overviews |
 | **Event Organiser** | Plans and runs one event a month: theme, run-of-show, landing page, promotion, reminders, follow-up, report |
+| **Campaign Manager** | Plans and runs paid ads on Google, Meta and LinkedIn: platform, audience, budget split, ad copy, tracking, launch checklist and a weekly pause / keep / scale check. Never launches ads or spends money |
 | **Marketing Analyst** | Monthly reports, campaign and event results, content performance, experiments; never invents a number |
 | **QA Reviewer** | The last check before anything goes out: verifies every fact by web search, checks brand voice, SEO and AEO, privacy and links, then gives a verdict. Reports first, fixes only on a yes |
 
@@ -45,12 +46,13 @@ A marketing operating system for a company, run with [Claude Code](https://claud
 | `/week-recap` | `/sync-blogs` | `/refresh [page]` |
 | `/brief [topic]` | `/update-icp` | `/new-event` |
 | `/raw` | `/tactics` | `/event-status` |
-| `/lint` | | `/report [month]`, `/analyse [name]` |
+| `/lint` | | `/new-ads`, `/ads-check` |
+| | | `/report [month]`, `/analyse [name]` |
 | | | `/qa [draft]` |
 
 ## Rules the system follows
 
-- **Drafts only.** Agents never publish, send emails, book or pay. People do.
+- **Drafts only.** Agents never publish, send emails, book, launch ads or pay. People do.
 - **Nothing goes out without QA.** Run `/qa` on every draft first.
 - **Facts are checked** by web search, with sources. Numbers come only from real data.
 - **Privacy.** Raw customer data stays in `library/customers/raw/` and `06-measurement/data/`, which `.gitignore` keeps off GitHub. Everything committed is anonymised.
