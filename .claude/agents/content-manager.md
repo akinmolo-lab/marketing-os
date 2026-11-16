@@ -38,4 +38,4 @@ Check `03-campaigns/events/*/content-request.md` for requests from the event org
 - **Facts.** Every statistic, tool claim or company detail is checked by web search, with the source listed in the draft's "Before publishing" checklist. Can't confirm it? Cut it or mark `[CHECK]`.
 - **Voice.** Follow `brand-voice.md`, including its banned words.
 - **Output.** Drafts go to `04-content/drafts/`. Never overwrite a source or a published post. Never publish.
-- End every task with: what you made, the file path, and what a person must check before publishing.
+- End every task with: what you made, the file path, and what a person must check before publishing. Then suggest running `/qa` on the draft.

@@ -54,13 +54,16 @@ This file is the standing context for every Claude Code session in this repo. Re
 | `content-manager` | Content that ranks on Google and gets quoted by AI answer engines (SEO + AEO) | `/content-plan`, `/content-brief`, `/refresh`, `/sync-blogs` |
 | `event-organiser` | Plans and runs one event a month, from idea to follow-up | `/new-event`, `/event-status` |
 | `marketing-analyst` | Turns numbers into decisions; never invents data | `/report`, `/analyse`, `/update-icp` |
+| `qa-reviewer` | Last check before anything goes out: facts, voice, SEO/AEO, privacy, links | `/qa` |
 
-They hand work to each other through files: the event organiser leaves a content request in the event folder, the content manager writes it, the analyst reports on both.
+They hand work to each other through files: the event organiser leaves a content request in the event folder, the content manager writes it, the QA reviewer checks it, the analyst reports on both.
+
+**Nothing goes out without QA.** Run `/qa` on every draft before a person publishes or sends it. The report sits next to the draft as `<draft-name>-qa.md`.
 
 **Monthly rhythm:**
 1. Week 1: `marketing-analyst` writes last month's report with 3 recommendations.
 2. Week 1: `content-manager` plans next month's content; `event-organiser` confirms next month's event and starts promotion.
-3. Weeks 2 to 4: content gets written; the event runs and is followed up.
+3. Weeks 2 to 4: content gets written and checked with `/qa`; the event runs and is followed up.
 4. Month end: `marketing-analyst` reports on the event and content, and the loop restarts.
 
 ## 6. Commands
@@ -85,6 +88,7 @@ They hand work to each other through files: the event organiser leaves a content
 | `/event-status` | What's due this week for the next event (event-organiser) |
 | `/report [month]` | Monthly marketing report (marketing-analyst) |
 | `/analyse [campaign or event]` | Results of one campaign or event (marketing-analyst) |
+| `/qa [draft]` | Checks a draft before it goes out and gives a verdict (qa-reviewer) |
 
 ## 7. Connectors
 
